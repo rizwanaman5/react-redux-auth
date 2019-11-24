@@ -10,6 +10,9 @@ const userSchema = new mongoose.Schema({
     pasword: {
         type: String
     },
+    token: {
+        type: String
+    },
     user_type: "User"
 })
 

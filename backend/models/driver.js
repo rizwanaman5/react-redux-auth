@@ -10,6 +10,9 @@ const driverSchema = new mongoose.Schema({
     pasword: {
         type: String
     },
+    token: {
+        type: String
+    },
     user_type: "Driver"
 })
 

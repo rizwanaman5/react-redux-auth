@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 const bcrypt = require('bcrypt')
+const jwt = require('jsonwebtoken')
 const db = require('../models')
 
 
@@ -11,7 +12,9 @@ router.get('/', function (req, res, next) {
 
 router.post('/', function (req, res) {
   let user = new db.User(req.body)
-  
+
+
+
 })
 
 module.exports = router;

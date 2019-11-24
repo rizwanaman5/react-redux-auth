@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "client": "npm start --prefix ../client",
+    "both": "concurrently \"npm run dev\" \"npm run client\""
   },
   "dependencies": {
     "bcrypt": "^3.0.7",
